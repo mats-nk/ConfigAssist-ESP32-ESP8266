@@ -6,7 +6,8 @@
   #if defined(ESP32)
     #include <cstring>
   #else
-    #include "String.h"
+//    #include "String.h"
+    #include <cstring>
   #endif
 #include <vector>
 #include <string>
