@@ -5,7 +5,7 @@
 #include "ConfigAssist.h"
 #if defined(ESP32)
     #include <WiFi.h>
-#else
+#elif defined(ESP8266)
     #include <ESP8266WiFi.h>
 #endif
 #include <time.h>
