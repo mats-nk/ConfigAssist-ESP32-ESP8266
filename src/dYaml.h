@@ -5,7 +5,7 @@
 #define __DIRECT_YAML_H__
   #if defined(ESP32)
     #include <cstring>
-  #else
+  #elif defined(ESP8266)
 //    #include "String.h"
     #include <cstring>
   #endif
