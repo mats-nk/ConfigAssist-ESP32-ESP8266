@@ -156,7 +156,7 @@ bool ConfigAssist::setupAP(bool startMDNS){
 
   // Get ip config and setup if found
   IPAddress ip, mask, gw;
-  if(getIPFromString(get(CA_ST_STATICIP_KEY), ip, mask, gw)){
+  if(getIPFromString(get(CA_AP_STATICIP_KEY), ip, mask, gw)){
     WiFi.softAPConfig(ip,gw,mask);
   }
 

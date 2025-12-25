@@ -772,7 +772,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   async function updateKey(key, value) {
     if(value == null ) return;
     const baseHost = document.location.origin;
-    var url = baseHost + "/cfg?" + key + "=" + value
+    var url = baseHost + "/cfg?" + encodeURIComponent(key) + "=" + encodeURIComponent(value)
 
     if (key=="_RBT"){
       let nowUTC = Math.floor(new Date().getTime() / 1000);
